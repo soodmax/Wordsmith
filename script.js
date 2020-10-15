@@ -3,7 +3,7 @@ function scan() {
     var wordToScanInput = document.getElementById("wordChallenge");
     var charsCountInput = document.getElementById("charsCount");
     var charsFoundInput = document.getElementById("charsFound");
-    var historyListSelect = document.getElementById("historyList");
+    var historyList = document.getElementById("history");
 
     var chosenWord = chosenWordInput.value.toLowerCase();
     var wordToScan = wordToScanInput.value.toLowerCase();
@@ -27,7 +27,8 @@ function scan() {
     charsCountInput.value = alphaUnique.length;
     charsFoundInput.value = alphaUnique;
 
-    historyListSelect.options.add(new Option(chosenWord + " >> " + wordToScan + " >> " + alphaUnique.length, alphaUnique.length), historyListSelect.options[0]);
+    historyList.innerHTML += chosenWord + " >> " + wordToScan + " >> " + alphaUnique.length + "<br>";
+    // historyListSelect.options.add(new Option(chosenWord + " >> " + wordToScan + " >> " + alphaUnique.length, alphaUnique.length), historyListSelect.options[0]);
 }
 
 function reset() {
