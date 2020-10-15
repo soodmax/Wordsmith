@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <h1>Welcome to Wordsmithing</h1>
+
+        <div id="column1">
+          <div id="label">Chosen Word:</div>
+          <div><input type="text" id="chosenWord" /></div>
+          <div id="label">Word Challenge:</div>
+          <div><input type="text" id="wordChallenge" /></div>
+          <div id="label">Results:</div>
+          <div id="result">
+            <input type="text" id="charsCount" />
+            <input type="text" id="charsFound" />
+          </div>
+          <div>
+            <button id="scan" onclick="scan()">Scan</button>
+            <button id="reset" onclick="reset()">Retry</button>
+          </div>
+        </div>
+        <div id="column2">
+          <div id="label">History:</div>
+          <select name="historyList" id="historyList" size="3"></select>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
