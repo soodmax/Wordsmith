@@ -27,7 +27,7 @@ function scan() {
     charsCountInput.value = alphaUnique.length;
     charsFoundInput.value = alphaUnique;
 
-    historyList.innerHTML += chosenWord + " >> " + wordToScan + " >> " + alphaUnique.length + "<br>";
+    historyList.innerHTML = chosenWord + " >> " + wordToScan + " >> " + alphaUnique.length + "<br>" + historyList.innerHTML;
     // historyListSelect.options.add(new Option(chosenWord + " >> " + wordToScan + " >> " + alphaUnique.length, alphaUnique.length), historyListSelect.options[0]);
 }
 
