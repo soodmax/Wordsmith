@@ -7,9 +7,6 @@ function scan() {
     var chosenWord = chosenWordInput.value.toLowerCase();
     var wordToScan = wordToScanInput.value.toLowerCase();
 
-    console.log(chosenWord);
-    console.log(wordToScan);
-
     var alpha;
     var counter = 0;
 
