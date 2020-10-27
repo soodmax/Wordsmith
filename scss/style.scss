@@ -21,6 +21,9 @@ main {
       border: none;
       outline: none; //test
       border-bottom: 1px solid #ccc;
+      &:focus {
+          border-bottom: 5px solid #444e4d;
+      }
     }
     label {
       font-weight: 700;
