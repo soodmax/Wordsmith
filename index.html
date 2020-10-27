@@ -22,18 +22,21 @@
         </div>
         <div id="row">
           <label for="">Alphabets Count:</label>
-          <input type="text" id="chosenWord" readonly>
+          <input type="text" id="charsCount" readonly>
         </div>
         <div id="row">
           <label for="">Alphabets Found:</label>
-          <input type="text" id="wordChallenge" readonly>
+          <input type="text" id="charsFound" readonly>
         </div>
         <div id="row">
-          <button>Scan</button>
+          <button onclick="scan()">Scan</button>
         </div>
         <div id="row">
-          <button>Retry</button>
+          <button onclick="reset()">Retry</button>
         </div>
+        <div id="history">
+        </div>
+        
       </div>
     </main>
     <script src="script.js"></script>
