@@ -6,36 +6,36 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Wordsmithy</title>
   </head>
   <body>
-    <div class="container">
-      <main>
-        <h1>Welcome to Wordsmithing</h1>
-
-        <div id="column1">
-          <div id="label">Chosen Word:</div>
-          <div><input type="text" id="chosenWord" /></div>
-          <div id="label">Word Challenge:</div>
-          <div><input type="text" id="wordChallenge" /></div>
-          <div id="label">Results:</div>
-          <div id="result">
-            <input type="text" id="charsCount" />
-            <input type="text" id="charsFound" />
-          </div>
-          <div>
-            <button id="scan" onclick="scan()">Scan</button>
-            <button id="reset" onclick="reset()">Retry</button>
-          </div>
+    <main>
+      <div id="container">
+        <div id="row">
+          <label for="">Chosen Word:</label>
+          <input type="text" id="chosenWord">
         </div>
-        <div id="column2">
-          <div id="label">History:</div>
-          <div id="history"></div>
-          <!-- <select name="historyList" id="historyList" size="3"></select> -->
+        <div id="row">
+          <label for="">Word Challenge:</label>
+          <input type="text" id="wordChallenge">
         </div>
-      </main>
-    </div>
+        <div id="row">
+          <label for="">Alphabets Count:</label>
+          <input type="text" id="chosenWord" readonly>
+        </div>
+        <div id="row">
+          <label for="">Alphabets Found:</label>
+          <input type="text" id="wordChallenge" readonly>
+        </div>
+        <div id="row">
+          <button>Scan</button>
+        </div>
+        <div id="row">
+          <button>Retry</button>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
