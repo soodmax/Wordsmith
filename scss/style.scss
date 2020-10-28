@@ -29,6 +29,7 @@ main {
         height: 38px;
         border: 1px solid #ccc;
         outline: none;
+        text-transform: uppercase;
         &:focus {
           border-bottom: 2px solid $main-color;
         }
