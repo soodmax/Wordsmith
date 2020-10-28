@@ -51,6 +51,11 @@ main {
           background-color: lighten($color: $main-color, $amount: 10%);
         }
       }
+      .read-only {
+        input {
+          background-color: #ddd;
+        }
+      }
     }
   }
 }
