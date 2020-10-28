@@ -6,7 +6,7 @@ $main-color: #47444e;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 16px/1.6 'Nunito', Sans-serif;
+  font: 16px/1.6 'Nunito',Sans-serif;
 }
 
 main {
@@ -51,6 +51,11 @@ main {
         cursor: pointer;
         &:hover {
           background-color: lighten($color: $main-color, $amount: 10%);
+        }
+      }
+      .read-only {
+        input {
+          background-color: #ddd;
         }
       }
     }
