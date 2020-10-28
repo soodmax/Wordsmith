@@ -22,7 +22,7 @@ main {
       outline: none; //test
       border-bottom: 1px solid #ccc;
       &:focus {
-          border-bottom: 5px solid #444e4d;
+        border-bottom: 5px solid #444e4d;
       }
     }
     label {
@@ -33,6 +33,10 @@ main {
       width: 100%;
       height: 40px;
       border: none;
+      background-color: #444e4d;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 5px;
     }
   }
 }
