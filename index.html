@@ -11,32 +11,33 @@
   </head>
   <body>
     <main>
-      <div id="container">
-        <div id="row">
-          <label for="">Chosen Word:</label>
-          <input type="text" id="chosenWord">
+      <div id="wrapper">
+        <h1>Welcome to the Game</h1>
+        <div id="container">
+          <p>
+            <label for="">Chosen Word:</label>
+            <input type="text" id="chosenWord" />
+          </p>
+          <p>
+            <label for="">Word Challenge:</label>
+            <input type="text" id="wordChallenge" />
+          </p>
+          <p>
+            <label for="">Alphabets Count:</label>
+            <input type="text" id="charsCount" readonly />
+          </p>
+          <p>
+            <label for="">Alphabets Found:</label>
+            <input type="text" id="charsFound" readonly />
+          </p>
+          <p>
+            <button onclick="challenge()">Challenge</button>
+          </p>
+          <p>
+            <button onclick="retry()">Retry</button>
+          </p>
+          <div id="history"></div>
         </div>
-        <div id="row">
-          <label for="">Word Challenge:</label>
-          <input type="text" id="wordChallenge">
-        </div>
-        <div id="row">
-          <label for="">Alphabets Count:</label>
-          <input type="text" id="charsCount" readonly>
-        </div>
-        <div id="row">
-          <label for="">Alphabets Found:</label>
-          <input type="text" id="charsFound" readonly>
-        </div>
-        <div id="row">
-          <button onclick="scan()">Scan</button>
-        </div>
-        <div id="row">
-          <button onclick="reset()">Retry</button>
-        </div>
-        <div id="history">
-        </div>
-        
       </div>
     </main>
     <script src="script.js"></script>

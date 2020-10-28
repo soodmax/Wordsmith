@@ -1,4 +1,4 @@
-function scan() {
+function challenge() {
     var chosenWordInput = document.getElementById("chosenWord");
     var wordToScanInput = document.getElementById("wordChallenge");
     var charsCountInput = document.getElementById("charsCount");
@@ -31,7 +31,7 @@ function scan() {
     // historyListSelect.options.add(new Option(chosenWord + " >> " + wordToScan + " >> " + alphaUnique.length, alphaUnique.length), historyListSelect.options[0]);
 }
 
-function reset() {
+function retry() {
     var wordToScanInput = document.getElementById("wordChallenge");
     var charsCountInput = document.getElementById("charsCount");
     var charsFoundInput = document.getElementById("charsFound");
