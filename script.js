@@ -1,14 +1,15 @@
 "use strict";
 
+const wordToScanInput = document.getElementById("wordChallenge");
+const charsCountInput = document.getElementById("charsCount");
+const charsFoundInput = document.getElementById("charsFound");
+const chosenWordInput = document.getElementById("chosenWord");
+const historyList = document.getElementById("history");
+
 function challenge() {
-    var chosenWordInput = document.getElementById("chosenWord");
-    var wordToScanInput = document.getElementById("wordChallenge");
-    var charsCountInput = document.getElementById("charsCount");
-    var charsFoundInput = document.getElementById("charsFound");
-    var historyList = document.getElementById("history");
     
-    var chosenWord = chosenWordInput.value.toLowerCase();
-    var wordToScan = wordToScanInput.value.toLowerCase();
+    const chosenWord = chosenWordInput.value.toLowerCase();
+    const wordToScan = wordToScanInput.value.toLowerCase();
     
     if (!chosenWord)
     {
@@ -24,10 +25,10 @@ function challenge() {
         return;
     }
 
-    var alpha = [];
-    var counter = 0;
+    const alpha = [];
+    let counter = 0;
 
-    for (var i = 0; i < wordToScan.length; i++) {
+    for (let i = 0; i < wordToScan.length; i++) {
 
         if (chosenWord.includes(wordToScan.charAt(i)))
         {
@@ -36,7 +37,7 @@ function challenge() {
         }
     }
     
-    var alphaUnique = alpha.filter(function(item, pos){
+    const alphaUnique = alpha.filter(function(item, pos){
         return alpha.indexOf(item)== pos; 
       });
 
@@ -47,10 +48,7 @@ function challenge() {
 }
 
 function retry() {
-    var wordToScanInput = document.getElementById("wordChallenge");
-    var charsCountInput = document.getElementById("charsCount");
-    var charsFoundInput = document.getElementById("charsFound");
-
+ 
     wordToScanInput.value = "";
     charsCountInput.value = "";
     charsFoundInput.value = "";
