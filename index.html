@@ -16,11 +16,16 @@
         <div id="container">
           <p>
             <label for="chosenWord">Chosen Word:</label>
-            <input type="text" id="chosenWord" name="chosenWord"/>
+            <input type="text" id="chosenWord" name="chosenWord" />
           </p>
           <p>
             <label for="wordChallenge">Word Challenge:</label>
-            <input type="text" id="wordChallenge" name="wordChallenge"/>
+            <input
+              type="text"
+              id="wordChallenge"
+              name="wordChallenge"
+              onkeypress="captureEnter(event)"
+            />
           </p>
           <p class="read-only">
             <label for="charsCount">Alphabets Count:</label>
@@ -31,15 +36,17 @@
             <input type="text" id="charsFound" name="charsFound" readonly />
           </p>
           <p>
-            <button onclick="challenge()">Challenge</button>
+            <button onclick="challenge()" class="btn-primary">Challenge</button>
           </p>
           <p>
-            <button onclick="retry()">Retry</button>
+            <button onclick="retry()" class="btn-secondary">Retry</button>
           </p>
           <div id="history"></div>
         </div>
         <a href="https://validator.w3.org/check/referer">Check HTML</a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">Check CSS</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"
+          >Check CSS</a
+        >
       </div>
     </main>
     <script src="script.js"></script>
