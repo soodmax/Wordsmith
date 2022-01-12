@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-$main-color: #47444e;
+$main-color: #2C2E39;
+$secondary-color: #DC6646;
 
 * {
   margin: 0;
@@ -9,9 +10,14 @@ $main-color: #47444e;
   font: 16px/1.6 'Nunito',Sans-serif;
 }
 
+body {
+  background-color: #050D15;
+}
+
 main {
   margin-top: 20px;
   #wrapper {
+    background-color: #ccc;
     width: 50%;
     margin: auto;
     h1 {
@@ -61,13 +67,13 @@ main {
         width: 100%;
         height: 40px;
         border: none;
-        background-color: red;
+        background-color: $secondary-color;
         color: #fff;
         font-size: 18px;
         border-radius: 5px;
         cursor: pointer;
         &:hover {
-          background-color: lighten($color: $main-color, $amount: 10%);
+          background-color: lighten($color: $secondary-color, $amount: 10%);
         }
       }
       .read-only {
