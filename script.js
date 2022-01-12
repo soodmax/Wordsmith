@@ -77,6 +77,7 @@ function retry() {
   wordToScanInput.value = '';
   charsCountInput.value = '';
   charsFoundInput.value = '';
-
+  historyList.innerHTML = '';
+  
   chosenWordInput.focus();
 }
