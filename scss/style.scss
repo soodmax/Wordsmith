@@ -46,7 +46,7 @@ main {
         text-transform: uppercase;
 
         &:focus {
-          border-bottom: 2px solid $main-color;
+          border: 5px solid $main-color;
         }
       }
       label {
@@ -61,7 +61,7 @@ main {
         background-color: $main-color;
         color: #fff;
         font-size: 18px;
-        border-radius: 5px;
+        border-radius: 10px;
         cursor: pointer;
         &:hover {
           background-color: lighten($color: $main-color, $amount: 10%);
@@ -76,7 +76,7 @@ main {
         background-color: $secondary-color;
         color: #fff;
         font-size: 18px;
-        border-radius: 5px;
+        border-radius: 10px;
         cursor: pointer;
         &:hover {
           background-color: lighten($color: $secondary-color, $amount: 10%);
