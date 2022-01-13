@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-$main-color: #2C2E39;
-$secondary-color: #DC6646;
+$main-color: #3d5ba4;
+$secondary-color: #dc6646;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 16px/1.6 'Roboto Mono',Sans-serif;
+  font: 16px/1.6 'Roboto Mono', Sans-serif;
 }
 
 body {
-  background-color: #050D15;
+  background-color: #24262e;
+}
+a,
+#history {
+  color: #fff;
 }
 
 main {
   margin-top: 20px;
   #wrapper {
-    background-color: #ccc;
+    background-color: #2c2e3c;
     width: 50%;
     margin: auto;
     h1 {
@@ -29,24 +33,26 @@ main {
     #container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 1.2);
       padding: 10px;
       gap: 10px;
       input {
         width: 100%;
-        height: 38px;
+        height: 45px;
         border: 1px solid #ccc;
+        border-radius: 10px;
         outline: none;
-        padding-left:10px;
+        padding-left: 10px;
         text-transform: uppercase;
+
         &:focus {
           border-bottom: 2px solid $main-color;
         }
       }
       label {
         font-weight: 700;
+        color: #fff;
       }
-
       .btn-primary {
         margin-top: 20px;
         width: 100%;
