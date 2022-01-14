@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-document.addEventListener('DOMContentLoaded', initialize);
+document.addEventListener("DOMContentLoaded", initialize);
 
-const chosenWordInput = document.getElementById('chosenWord');
-const wordToScanInput = document.getElementById('wordChallenge');
-const charsCountInput = document.getElementById('charsCount');
-const charsFoundInput = document.getElementById('charsFound');
+const chosenWordInput = document.getElementById("chosenWord");
+const wordToScanInput = document.getElementById("wordChallenge");
+const charsCountInput = document.getElementById("charsCount");
+const charsFoundInput = document.getElementById("charsFound");
 
-const historyList = document.getElementById('history');
+const historyList = document.getElementById("history");
 
 let challengeCount = 0;
 
@@ -29,13 +29,13 @@ function challenge() {
   const wordToScan = wordToScanInput.value.toLowerCase();
 
   if (!chosenWord) {
-    alert('Need a word to scan, chief!');
+    alert("Need a word to scan, chief!");
     chosenWordInput.focus();
     return;
   }
 
   if (!wordToScan) {
-    alert('Need a word to challenge with, chief!');
+    alert("Need a word to challenge with, chief!");
     wordToScanInput.focus();
     return;
   }
@@ -60,24 +60,24 @@ function challenge() {
 
   historyList.innerHTML =
     challengeCount +
-    ' : ' +
+    " : " +
     chosenWord +
-    ' >> ' +
+    " >> " +
     wordToScan +
-    ' >> ' +
+    " >> " +
     alphaUnique.length +
-    '<br>' +
+    "<br>" +
     historyList.innerHTML;
 }
 
 function retry() {
   challengeCount = 0;
 
-  chosenWordInput.value = '';
-  wordToScanInput.value = '';
-  charsCountInput.value = '';
-  charsFoundInput.value = '';
-  historyList.innerHTML = '';
-  
+  chosenWordInput.value = "";
+  wordToScanInput.value = "";
+  charsCountInput.value = "";
+  charsFoundInput.value = "";
+  historyList.innerHTML = "";
+
   chosenWordInput.focus();
 }
