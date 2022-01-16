@@ -66,6 +66,8 @@ function challenge() {
     wordToScan +
     " >> " +
     alphaUnique.length +
+    " >> " +
+    alphaUnique +
     "<br>" +
     historyList.innerHTML;
 }
