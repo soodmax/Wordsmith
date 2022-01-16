@@ -59,7 +59,7 @@ function challenge() {
   challengeCount++;
 
   historyList.innerHTML =
-    ('0' + challengeCount).substring(('0' + challengeCount).length - 2) +
+    "Attemp " + ('0' + challengeCount).substring(('0' + challengeCount).length - 2) +
     ' : ' +
     chosenWord +
     ' >> ' +
