@@ -7,16 +7,16 @@ $secondary-color: #dc6646;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 16px/1.6 "Roboto Mono", Sans-serif;
+  font: 1em/1.6 "Roboto Mono", Sans-serif;
 }
 
 body {
   background-color: #24262e;
 }
 
-a,
 #history {
   color: #fff;
+  padding: 0px 20px 10px 20px;
 }
 
 main {
@@ -38,7 +38,7 @@ main {
     #container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      padding: 10px;
+      padding: 20px 20px;
       gap: 10px;
 
       input {
